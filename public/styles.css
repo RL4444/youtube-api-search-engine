@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* /////////////////////////FONTS
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+
+ ///////////////////////////////// */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 20vh;
+
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 30vh;
+  border-bottom: 1px solid red 
+}
+
+p {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.button {
+  font-size: 1.8vw;
+  background-color: rgb(210, 0, 0);
+  width: 300px;
+  padding: 20px 15px 15px;
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(91, 1, 1);
+}
+
+/* ////////////////////////////////////////////////// */
+
+.app-container {
+  width: 100%;
+  min-height: 100%;
+}
+
+.app-header {
+  background-color: rgb(200, 0, 0);
+  text-align: center;
+  height: 20vh;
+  width: 100%;
+  padding-top: 5vh;
+}
+
+.app-header h1 {
+  color: white;
+  font-size: 5vw;
+}
+
+.app-body {
+  text-align: center;
+  margin-top: 6vh;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2.5em
+}
+.each-body-section {
+  border-top: 1px solid rgb(189, 0, 0);
+}
+
+/* ////////////////////SEARCH BAR */
+.search-spaces {
+  margin-top: 2.5vh;
+  margin-bottom: 1.5vh;
+}
+.search-bar-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  width: 60%;
+}
+
+.search-bar-container input {
+  border: 1px solid black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  width: 100%;
+  text-align: center
+  
+}
+.search-bar-container input:hover {
+  background-color: lightgray;
+  cursor: pointer
+
+}
+
+/* /////////////////////VIDEO LIST STYLES */
+
+.video-container {
+
+    width: 90%;
+    margin-left: 5%;
+    height: 20vh;
+    border-bottom: 1px red
+}
+
+.video-title {
+  /* margin-top: 2vh;
+  margin-bottom: 1vh; */
+  height: 2vh;
+  font-size: .5em
+}
+.video-thumbnail-container {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-thumbnail-container img {
+  max-width: 30vw;
+  max-height: 10vh;
+}
+
+.description-box {
+  width: 50%;
+  font-size: .5em;
+}

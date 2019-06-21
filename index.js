@@ -37,8 +37,8 @@ if (process.env.NODE_ENV != "production") {
 //////////////ROUTES
 
 app.get("/getYoutube", async (req, res )=> {
-    let param = req.query.searchString
-    const resp = await ys.videoSearch(param, "10")
+    const {searchString, resultsNumber } = req.query
+    const resp = await ys.videoSearch(searchString, resultsNumber)
     res.json({
         resp
     });

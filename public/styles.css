@@ -15,25 +15,14 @@ h3,
 h4 {
   font-family: "Oswald", sans-serif;
 }
-.flex-row {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 20vh;
-
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
-  height: 30vh;
-  border-bottom: 1px solid red 
-}
 
 p {
   font-family: "Open Sans Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black
 }
 .button {
   font-size: 1.8vw;
@@ -72,7 +61,6 @@ p {
   margin-top: 6vh;
   width: 80%;
   margin-left: 10%;
-  font-size: 2.5em
 }
 .each-body-section {
   border-top: 1px solid rgb(189, 0, 0);
@@ -84,55 +72,8 @@ p {
   margin-bottom: 1.5vh;
 }
 .search-bar-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 10%;
+  width: 80%;
 }
 
-.search-bar-container input {
-  border: 1px solid black;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  width: 100%;
-  text-align: center
-  
-}
-.search-bar-container input:hover {
-  background-color: lightgray;
-  cursor: pointer
 
-}
-
-/* /////////////////////VIDEO LIST STYLES */
-
-.video-container {
-
-    width: 90%;
-    margin-left: 5%;
-    height: 20vh;
-    border-bottom: 1px red
-}
-
-.video-title {
-  /* margin-top: 2vh;
-  margin-bottom: 1vh; */
-  height: 2vh;
-  font-size: .5em
-}
-.video-thumbnail-container {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-.video-thumbnail-container img {
-  max-width: 30vw;
-  max-height: 10vh;
-}
-
-.description-box {
-  width: 50%;
-  font-size: .5em;
-}

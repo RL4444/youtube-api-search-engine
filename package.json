@@ -12,6 +12,8 @@
         "node": "8.11.2"
     },
     "dependencies": {
+        "@material-ui/core": "^4.1.1",
+        "@material-ui/icons": "^4.2.0",
         "axios": "^0.19.0",
         "babel-cli": "^6.18.0",
         "babel-core": "^6.20.0",
@@ -25,6 +27,7 @@
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.15.2",
         "compression": "^1.7.0",
+        "contentful": "^7.8.0",
         "cookie-parser": "^1.4.3",
         "cookie-session": "^2.0.0-alpha.2",
         "csurf": "^1.9.0",
@@ -42,13 +45,16 @@
         "redux-devtools-extension": "^2.13.2",
         "redux-promise": "^0.5.3",
         "request": "^2.88.0",
-        "socket-cookie-session": "github:spicedacademy/socket-cookie-session",
         "socket.io": "^2.0.3",
         "uid-safe": "^2.1.4",
-        "webpack": "^1.14.0",
-        "webpack-dev-middleware": "^1.8.4"
+        "webpack": "^4.4.0"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "css-loader": "^3.0.0",
+        "mini-css-extract-plugin": "^0.7.0",
+        "webpack-dev-middleware": "^1.12.2"
+    }
 }

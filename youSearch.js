@@ -12,8 +12,9 @@ if (process.env.NODE_ENV == "production") {
 const YT_API_KEY = secrets.YT_KEY;
 
 exports.videoSearch = async function(searchString, listNumber) {
+    const maxResults = listNumber.toString()
     try {
-        const url =  `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchString}&order=relevance&key=${YT_API_KEY}`
+        const url =  `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchString}&maxResults=${listNumber}&order=relevance&key=${YT_API_KEY}`
         const fetchData = await fetch(url)
         const respJSON = fetchData.json()
     

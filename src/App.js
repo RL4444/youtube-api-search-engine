@@ -112,7 +112,6 @@ class App extends Component {
                     />
                 </div>
                 <div className="each-body-section">
-                    <h2>HELLO TO A WHOLE NEW YOUTUBE WORLD</h2>
                     <p>Search Someting To Get The Party Started</p>
                 </div>
             </div>

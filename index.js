@@ -36,13 +36,13 @@ if (process.env.NODE_ENV != "production") {
 
 //////////////ROUTES
 
-app.get("/getYoutube", async (req, res )=> {
-    const {searchString, resultsNumber } = req.query
-    const resp = await ys.videoSearch(searchString, resultsNumber)
+app.get("/getYoutube", async (req, res) => {
+    const { searchString, resultsNumber } = req.query;
+    const resp = await ys.videoSearch(searchString, resultsNumber);
     res.json({
         resp
     });
-})
+});
 //////////////////////MIDDLEWARE
 app.get("*", function(req, res) {
     res.sendFile(__dirname + "/index.html");
